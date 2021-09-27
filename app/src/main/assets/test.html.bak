@@ -1,0 +1,59 @@
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="true" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>4fun video</title>
+    <link href="/newActivity/css/normalize.css" rel="stylesheet" />
+    <link href="/newActivity/css/common.css" rel="stylesheet" />
+    <link href="/newActivity/css/shared.css" rel="stylesheet" />
+</head>
+<body>
+    <a href="4fun://ui.activity/ActivityUserPage?userId=87F8B987DF436598">4Fun</a>
+<div id="topbar">
+    <img src="/newActivity/imgs/shared/oval-19.png" class="avatar" />
+    <div class="desc">
+        <b></b> invites you to join 4Fun
+    </div>
+    <a class="btn btn-jump" href="javascript:void(0);">Join</a>
+</div>
+<div id="videwWrap">
+    <a href="javascript:javascript(0);" class="poster-page">  
+        <!-- <div class="poster-img" style="">
+            <img class="poster" src="/newActivity/imgs/shared/video.png">
+        </div> -->
+        <span class="play-btn"></span>
+    </a>
+    <div class="player">
+        <video class="video-player pause" id="videoPlay" src="" poster="" type="video/mp4" x5-video-player-type="h5" playsinline="true" webkit-playsinline="true" preload="">
+        </video>
+    </div>
+    <div class="user-info-wrap js-user-follow " data-app-download-position="follow">
+        <img class="avatar" src="" alt="" />
+        <div class="user-content">
+            <p class="nickname"></p>
+            <p class="short-id"></p>
+        </div>
+        <a href="javascript:;" class="follow-it-btn">Follow</a>
+    </div>
+</div>
+<div id="imgGroup">
+    <div class="imgsTitle">More Top Videos</div>
+    <div id="imgsWrap">
+    </div>
+</div>
+<div id="downloadBtn">
+    Download to see more videos
+</div>
+<a id="footBanner">
+    <img src="/newActivity/imgs/shared/ftBanner.jpg" />
+</a>
+<div class="loaderBg hide"></div>
+<div class="loader hide"></div>
+<script src="/newActivity/js/zepto.min.js"></script>
+<script src="/newActivity/js/macy.js"></script>
+<script src="/newActivity/js/shared.js"></script>
+</body>
+</html>

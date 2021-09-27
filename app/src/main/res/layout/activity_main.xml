@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminateOnly="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:indeterminateOnly="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_marginTop="40dp"
+        android:indeterminateOnly="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pb4"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_marginTop="40dp"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.test.neil.kavayi.view.ReadMoreTextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp"
+        android:text="                                                                                                       name      \n      good name\n
+       \n \n \n good name good         \n\n       name good name\n \n \n good name good name \n\n\n    good name good name good name good name good name good name"
+        app:trimExpandedText="@string/moment_less"
+        app:trimLines="2"
+        app:trimCollapsedText="@string/share_more" />
+
+    <TextView
+        android:id="@+id/coordinate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:gravity="center"
+        android:padding="20dp"/>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></WebView>
+
+</LinearLayout>

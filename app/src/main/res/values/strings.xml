@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">kavayi</string>
+
+    <string name="share_more">more</string>
+    <string name="moment_less">less</string>
+</resources>
