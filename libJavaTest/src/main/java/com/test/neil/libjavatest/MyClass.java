@@ -67,6 +67,7 @@ public class MyClass {
         System.out.println(key | tt);
 
         System.out.println(formatTime((long) (1000 * 60 * 60 * 8.3)));
+        System.out.println("" + (((float)40267 / 1024) > 39));
 
     }
 
@@ -166,6 +167,11 @@ public class MyClass {
     }
 
     public static void testNumberFormat() {
+        Double d= Double.parseDouble("0.3333");
+        DecimalFormat df = new DecimalFormat("0.00");
+        System.out.println("============price xxx = " + df.format(d));
+
+
         DecimalFormat decimalFormat = new DecimalFormat(".00");
         long a = 1990000L;
         long b = 1000000L;

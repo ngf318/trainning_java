@@ -10,6 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".kotlin.ActivityKTMain"></activity>
+        <activity
+            android:name=".kotlin.ActivityKTMBase"
+            android:label="@string/title_activity_k_t_m_base"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".kotlin.ActivityKTMOne" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,8 +24,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".layout.CoordinateLayout" />
-        <activity android:name=".MainActivity1"
-            android:process=".niubi"/>
+        <activity
+            android:name=".MainActivity1"
+            android:process=".niubi" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".ActivityDsign" />
     </application>

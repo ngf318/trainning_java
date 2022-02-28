@@ -1,1 +1,2 @@
+include ':mylibraryKotlin'
 include ':app', ':libJavaTest', ':moduleTest'

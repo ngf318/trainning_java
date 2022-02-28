@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.nebula.mylibrarykotlin.ActivityTestOne;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -78,18 +80,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         mData.addAll(mTemp);
-
+        Test1();
 //        loading = findViewById(R.id.loading);
 
     }
 
     private void Test1() {
-        /*loading.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });*/
+        Gson gson = new Gson();
+        Map infoMap = gson.fromJson("{\n" +
+                "                \"avatar\": \"https://avatar.4funvideo.com/202201280800/7889d5f00764aa3e68d8cddd1c0416ab/63b10be8-eefc-45d6-9c32-4a1b62929e2c.jpg?x-oss-process=style/user_icon_128\",\n" +
+                "                \"hasRelation\": false,\n" +
+                "                \"name\": \"᭄\uD834\uDD1F≛⃝ krishna\uD834\uDD1F≛⃝\uD83D\uDD4A\",\n" +
+                "                \"uid\": \"41082675\"\n" +
+                "            }", new TypeToken<Map<String, Object>>(){}.getType());
+        Log.d("niexxx", "====map = " + infoMap.get("uid"));
     }
 
 
@@ -104,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     loading.setVisibility(View.GONE);
                 }*/
 
-                startActivity(new Intent(this, ActivityDsign.class));
+                startActivity(new Intent(this, ActivityTestOne.class));
                /* Intent i = new Intent(this, MainActivity1.class);
                 i.putExtra("test_1", "hello");
                 i.putExtra("test_2", 1001);
